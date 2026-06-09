@@ -4,17 +4,6 @@ A modular firmware project built on the **ESP-IDF v6.0.1** framework for the ESP
 
 ---
 
-## Table of Contents
-
-1. [Overview](#-overview)
-2. [Architecture](#-architecture)
-3. [Component Overview](#-component-overview)
-4. [Hardware Configuration](#-hardware-configuration)
-5. [Getting Started](#-getting-started)
-6. [Interactive Console Usage](#-interactive-console-usage)
-
----
-
 ## Overview
 
 The goal of this application is to provide a non-blocking interactive command interface to dynamically adjust the blinking speed of a status LED. The system ensures that:
