@@ -42,8 +42,8 @@ The application is split into a main entry point and two custom ESP-IDF componen
 
 Handles hardware-level configuration of the LED GPIO.
 
-- **Header:** [led_controller.h](esp32-nvs-led-blinker/components/led_controller/include/led_controller.h)
-- **Source:** [led_controller.c](esp32-nvs-led-blinker/components/led_controller/led_controller.c)
+- **Header:** [led_controller.h] `components/led_controller/include/led_controller.h`
+- **Source:** [led_controller.c] `components/led_controller/led_controller.c`
 - **Functions:**
   - `init_led(int led_pin)`: Resets and configures the GPIO as output.
   - `set_led_state(int led_pin, bool state)`: Writes logical levels to the GPIO.
@@ -52,8 +52,8 @@ Handles hardware-level configuration of the LED GPIO.
 
 Manages the Non-Volatile Storage (NVS) key-value records for persisting variables.
 
-- **Header:** [settings_manager.h](esp32-nvs-led-blinker/components/settings_manager/include/settings_manager.h)
-- **Source:** [settings_manager.c](esp32-nvs-led-blinker/components/settings_manager/settings_manager.c)
+- **Header:** [settings_manager.h] `components/settings_manager/include/settings_manager.h`
+- **Source:** [settings_manager.c] `components/settings_manager/settings_manager.c`
 - **Functions:**
   - `init_settings_storage()`: Mounts the NVS partition. Automatically erases and reformats the partition if it encounters structure version changes or pages overflow.
   - `save_blink_delay(int delay_ms)`: Writes the configured value to the NVS key `"blink_delay"`.
@@ -75,7 +75,7 @@ By default, the project is configured to drive an LED connected to **GPIO 32**.
 ```
 
 > [!NOTE]
-> You can change the target pin by modifying the `LED_GPIO` macro defined inside [main.c](nvs-concurrent-blink/main/main.c).
+> You can change the target pin by modifying the `LED_GPIO` macro defined inside [main.c] `main/main.c`
 
 ---
 
